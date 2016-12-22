@@ -11,13 +11,17 @@ public class Hero {
 
     private static final int DEFAULT_ARMOR = 0;
     private static final int DEFAULT_HEALTH = 100;
+    private static final int DEFAULT_MANA = 100;
     private static final int DEFAULT_LEVEL = 1;
     private static final int DEFAULT_MAX_HEALTH = 100;
+    private static final int DEFAULT_MAX_MANA = 100;
 
     private int armor;
     private int health;
+    private int mana;
     private List<Item> inventory;
     private int maxHealth;
+    private int maxMana;
     private int level;
 
     public Hero() {
@@ -25,6 +29,8 @@ public class Hero {
         health = DEFAULT_HEALTH;
         maxHealth = DEFAULT_MAX_HEALTH;
         level = DEFAULT_LEVEL;
+        mana = DEFAULT_MANA;
+        maxMana = DEFAULT_MAX_MANA;
 
         inventory = new ArrayList<>();
     }
@@ -80,5 +86,21 @@ public class Hero {
 
     public void setLevel(int level) {
         this.level = level;
+    }
+
+    public int getMana() {
+        return mana;
+    }
+
+    public void setMana(int mana) {
+        this.mana = mana;
+    }
+
+    public int getMaxMana() {
+        return maxMana;
+    }
+
+    public void setMaxMana(int maxMana) {
+        this.maxMana = maxMana;
     }
 }
