@@ -1,6 +1,6 @@
 package program;
 
-import logic.HeroAndProfessions.Warrior;
+import logic.Hero.Warrior;
 import logic.item.armor.LeatherArmor;
 import logic.item.potion.LevelPotion;
 

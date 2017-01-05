@@ -1,4 +1,4 @@
-package logic.HeroAndProfessions;
+package logic.Hero;
 
 import logic.item.Equippable;
 import logic.item.Item;
@@ -9,12 +9,14 @@ import java.util.List;
 public abstract class Hero {
 
     int armor;
+    int strength;
+    int agility;
     int health;
     int mana;
     List<Item> inventory;
     int maxHealth;
     int maxMana;
-    int level;
+    int level = 1;
 
     @Override
     public String toString() {
