@@ -7,7 +7,7 @@ import logic.item.Usable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Hero {
+public abstract class Hero {
 
     private static final int DEFAULT_ARMOR = 0;
     private static final int DEFAULT_HEALTH = 100;
