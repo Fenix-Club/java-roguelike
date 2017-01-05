@@ -1,39 +1,20 @@
-package logic.hero;
+package logic.HeroAndProfessions;
 
 import logic.item.Equippable;
 import logic.item.Item;
 import logic.item.Usable;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public abstract class Hero {
 
-    private static final int DEFAULT_ARMOR = 0;
-    private static final int DEFAULT_HEALTH = 100;
-    private static final int DEFAULT_MANA = 100;
-    private static final int DEFAULT_LEVEL = 1;
-    private static final int DEFAULT_MAX_HEALTH = 100;
-    private static final int DEFAULT_MAX_MANA = 100;
-
-    private int armor;
-    private int health;
-    private int mana;
-    private List<Item> inventory;
-    private int maxHealth;
-    private int maxMana;
-    private int level;
-
-    public Hero() {
-        armor = DEFAULT_ARMOR;
-        health = DEFAULT_HEALTH;
-        maxHealth = DEFAULT_MAX_HEALTH;
-        level = DEFAULT_LEVEL;
-        mana = DEFAULT_MANA;
-        maxMana = DEFAULT_MAX_MANA;
-
-        inventory = new ArrayList<>();
-    }
+    int armor;
+    int health;
+    int mana;
+    List<Item> inventory;
+    int maxHealth;
+    int maxMana;
+    int level;
 
     @Override
     public String toString() {

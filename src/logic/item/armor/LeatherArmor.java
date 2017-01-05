@@ -1,6 +1,6 @@
 package logic.item.armor;
 
-import logic.hero.Hero;
+import logic.HeroAndProfessions.Hero;
 
 public class LeatherArmor extends Armor {
 
