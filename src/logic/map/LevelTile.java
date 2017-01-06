@@ -9,12 +9,16 @@ import logic.map.ground.GroundType;
 public class LevelTile {
     private GroundType ground;
 
-    public LevelTile(String ground){
-        switch (ground){
-        }
+    public LevelTile(GroundType ground){
+        this.ground = ground;
     }
 
     public void setGround(GroundType ground) {
         this.ground = ground;
+    }
+
+    @Override
+    public String toString() {
+        return ground.toString();
     }
 }
