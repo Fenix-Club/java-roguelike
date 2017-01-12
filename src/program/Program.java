@@ -1,6 +1,6 @@
 package program;
 
-import logic.hero.Hero;
+import logic.Hero.Warrior;
 import logic.item.armor.LeatherArmor;
 import logic.item.potion.LevelPotion;
 import logic.map.GameLevel;
@@ -10,7 +10,7 @@ import java.util.Random;
 public class Program {
 
     public static void main(String[] args) {
-        Hero hero = new Hero();
+        Warrior hero = new Warrior();
         System.out.println(hero);
 
         hero.useItem(new LevelPotion());

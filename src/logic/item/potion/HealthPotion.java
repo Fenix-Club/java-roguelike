@@ -1,6 +1,6 @@
 package logic.item.potion;
 
-import logic.hero.Hero;
+import logic.Hero.Hero;
 
 public class HealthPotion extends Potion {
 
