@@ -4,6 +4,8 @@ import logic.Hero.Hero;
 
 public class LevelPotion extends Potion {
 
+    public String getShortItemName(){return "LePo";}
+
     @Override
     public String getItemName() {
         return "Potion of Level Up";

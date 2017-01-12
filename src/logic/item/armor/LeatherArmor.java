@@ -6,6 +6,8 @@ public class LeatherArmor extends Armor {
 
     private static final int ARMOR_VALUE = 15;
 
+    public String getShortItemName(){return "LeAr";}
+
     @Override
     protected int getArmorValue() {
         return ARMOR_VALUE;

@@ -1,6 +1,7 @@
 package logic.map;
 
 
+import logic.item.Item;
 import logic.map.ground.GroundType;
 
 import java.util.Random;
@@ -63,6 +64,23 @@ public class GameLevel {
             }
         }
     }
+    //Item connected methods
+    public void layItem(int i,int j, Item object)
+    {
+        map[i][j].placeItem(object);
+    }
+    public void removeItem(int i,int j)
+    {
+        map[i][j].removeItem();
+    }
+    public Item getLayingItem(int i, int j)
+    {
+        return map[i][j].getLayingItem();
+    }
+    public String getLayingItemName(int i, int j)
+    {
+        return map[i][j].getLayingItemName();
+    }
 
 
     @Override
@@ -71,6 +89,11 @@ public class GameLevel {
         for(int i = 0; i < n; i++) {
             for (int j = 0; j < this.n; j++) {
                 builder.append(this.map[i][j].toString());
+                builder.append(" ");
+            }
+            builder.append("\n");
+            for (int j = 0; j < this.n; j++) {
+                builder.append(this.map[i][j].getLayingItemName());
                 builder.append(" ");
             }
             builder.append("\n");

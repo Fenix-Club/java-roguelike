@@ -23,6 +23,11 @@ public class Program {
         System.out.println(hero);
 
         GameLevel level1 = new GameLevel(5);
+        //items laying methods test
+        LevelPotion lvl = new LevelPotion();
+        level1.layItem(0,0,lvl);
+        System.out.print(level1);
+        level1.removeItem(0,0);
         System.out.print(level1);
 
         GameLevel level2 = new GameLevel(5, "random");
