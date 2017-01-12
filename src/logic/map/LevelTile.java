@@ -13,6 +13,10 @@ public class LevelTile {
         this.ground = ground;
     }
 
+    public GroundType getGround() {
+        return ground;
+    }
+
     public void setGround(GroundType ground) {
         this.ground = ground;
     }

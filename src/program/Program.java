@@ -1,32 +1,30 @@
 package program;
 
-import logic.hero.Hero;
-import logic.item.armor.LeatherArmor;
-import logic.item.potion.LevelPotion;
+import asciiPanel.AsciiPanel;
 import logic.map.GameLevel;
 
-import java.util.Random;
+import javax.swing.*;
 
-public class Program {
+public class Program extends JFrame {
+
+    static private AsciiPanel terminal;
+
+    private Program() {
+        terminal = new AsciiPanel(24, 24);
+        add(terminal);
+        pack();
+    }
 
     public static void main(String[] args) {
-        Hero hero = new Hero();
-        System.out.println(hero);
+        Program app = new Program();
+        app.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        app.setVisible(true);
 
-        hero.useItem(new LevelPotion());
-        System.out.println(hero);
-
-        hero.equipItem(new LeatherArmor());
-        System.out.println(hero);
-
-        hero.useItem(new LevelPotion());
-        System.out.println(hero);
-
-        GameLevel level1 = new GameLevel(5);
-        System.out.print(level1);
-
-        GameLevel level2 = new GameLevel(5, "random");
-        System.out.print(level2);
-
+        GameLevel level1 = new GameLevel(5, "random");
+        for (int i = 0; i < level1.map.length; i++) {
+            for (int j = 0; j < level1.map[i].length; j++) {
+                terminal.write(level1.map[i][j].getGround().getMapDisplay(), i, j);
+            }
+        }
     }
 }
