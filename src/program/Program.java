@@ -22,16 +22,17 @@ public class Program {
         hero.useItem(new LevelPotion());
         System.out.println(hero);
 
-        GameLevel level1 = new GameLevel(5);
+        GameLevel level1 = new GameLevel(3);
+
         //items laying methods test
         LevelPotion lvl = new LevelPotion();
         level1.layItem(0,0,lvl);
         System.out.print(level1);
+        System.out.println(level1.getLayingItemName(0,0));
         level1.removeItem(0,0);
         System.out.print(level1);
-
-        GameLevel level2 = new GameLevel(5, "random");
-        System.out.print(level2);
+//        GameLevel level2 = new GameLevel(5, "random");
+//        System.out.print(level2);
 
     }
 }

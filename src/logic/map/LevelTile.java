@@ -35,6 +35,7 @@ public class LevelTile {
             return item.getShortItemName();
         }
     }
+    public String getLayingItemFullName(){return this.item.toString();}
 
     @Override
     public String toString() {

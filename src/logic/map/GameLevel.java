@@ -79,7 +79,7 @@ public class GameLevel {
     }
     public String getLayingItemName(int i, int j)
     {
-        return map[i][j].getLayingItemName();
+        return map[i][j].getLayingItemFullName();
     }
 
 
