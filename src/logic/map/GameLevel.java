@@ -12,7 +12,7 @@ import java.util.Set;
  */
 public class GameLevel {
     int n; //dimensions
-    LevelTile[][] map;
+    public LevelTile[][] map;
 
     public GameLevel(int n, String type){
         this.n = n;
