@@ -10,6 +10,7 @@ public class PlateArmor extends Armor {
 
     private static final int ARMOR_VALUE = 30;
 
+    public String getShortItemName(){return "PlAr";}
     @Override
     protected int getArmorValue() {
         return ARMOR_VALUE;

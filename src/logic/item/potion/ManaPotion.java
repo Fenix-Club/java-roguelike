@@ -7,6 +7,7 @@ public class ManaPotion extends Potion{
 
     private static final int MANA_VALUE = 10;
 
+    public String getShortItemName(){return "MaPo";}
     @Override
     public String getItemName() {
         return "Potion of Mana";

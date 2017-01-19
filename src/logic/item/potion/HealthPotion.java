@@ -6,6 +6,7 @@ public class HealthPotion extends Potion {
 
     private static final int HEALING_VALUE = 10;
 
+    public String getShortItemName(){return "HePo";}
     @Override
     public String getItemName() {
         return "Potion of Health";
