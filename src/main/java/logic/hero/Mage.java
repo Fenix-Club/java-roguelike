@@ -1,4 +1,4 @@
-package logic.Hero;
+package logic.hero;
 
 import java.util.ArrayList;
 
@@ -14,17 +14,17 @@ import java.util.ArrayList;
     mana = 0
     maxMana = 0
 */
-public class Druid extends Hero
+public class Mage extends Hero
 {
-    public Druid(){
-        armor = 8;
-        health = 100;
-        strength = 10;
-        agility = 20;
-        maxHealth = 350;
-        mana  = 100;
-        maxMana = 200;
+    public Mage(){
+        armor = 5;
+        strength = 8;
+        agility = 15;
+        maxHealth = 300;
+        mana = 150;
+        maxMana = 300;
 
         inventory = new ArrayList<>();
     }
+
 }

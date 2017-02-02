@@ -1,7 +1,7 @@
 package logic.item.potion;
 
 
-import logic.Hero.Hero;
+import logic.hero.Hero;
 
 public class ManaPotion extends Potion{
 

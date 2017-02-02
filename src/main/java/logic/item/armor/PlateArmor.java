@@ -1,6 +1,6 @@
 package logic.item.armor;
 
-import logic.Hero.Hero;
+import logic.hero.Hero;
 
 
 /**

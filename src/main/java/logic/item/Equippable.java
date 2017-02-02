@@ -1,6 +1,6 @@
 package logic.item;
 
-import logic.Hero.Hero;
+import logic.hero.Hero;
 
 public interface Equippable {
 

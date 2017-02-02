@@ -1,4 +1,4 @@
-package logic.Hero;
+package logic.hero;
 
 import logic.item.Equippable;
 import logic.item.Item;

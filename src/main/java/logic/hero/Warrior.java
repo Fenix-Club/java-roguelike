@@ -1,4 +1,4 @@
-package logic.Hero;
+package logic.hero;
 
 import java.util.ArrayList;
 
