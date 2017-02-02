@@ -29,5 +29,6 @@ public class Program extends JFrame {
         }
         Saver saver = new Saver();
         saver.saveMap(level1);
+        System.out.println(saver.LoadMap().toString());
     }
 }

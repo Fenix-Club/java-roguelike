@@ -3,8 +3,10 @@ package logic.persistance;
 import com.google.gson.Gson;
 import logic.map.GameLevel;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
+import java.util.Scanner;
 
 import static java.awt.SystemColor.text;
 
@@ -25,5 +27,15 @@ public class Saver {
             e.printStackTrace();
         }
     }
+    public GameLevel LoadMap(){
+        File inputfile = new File("map.json");
+        Scanner scan = null;
+        try {
+            scan = new Scanner(inputfile);
 
+        }catch (FileNotFoundException e){}
+        String map = scan.nextLine();
+        Gson gson = new Gson();
+        return gson.fromJson(map,GameLevel.class);
+    }
 }
