@@ -2,6 +2,7 @@ package program;
 
 import asciiPanel.AsciiPanel;
 import logic.map.GameLevel;
+import logic.persistance.Saver;
 
 import javax.swing.*;
 
@@ -26,5 +27,7 @@ public class Program extends JFrame {
                 terminal.write(level1.map[i][j].getGround().getMapDisplay(), i, j);
             }
         }
+        Saver saver = new Saver();
+        saver.saveMap(level1);
     }
 }
